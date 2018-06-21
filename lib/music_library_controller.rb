@@ -54,18 +54,6 @@ class MusicLibraryController
     all_genres.each_with_index {|genre, index| puts "#{index + 1}. " + genre}
   end
 
-  # def list_songs_by_artist
-  #   puts "Please enter the name of an artist:"
-  #   name = gets.strip
-  #   if Artist.find_by_name(name)
-  #     artist = Artist.find_by_name(name)
-  #     songs_by_artist_array = artist.songs.collect {|song| "#{song.name} - #{song.genre.name}"}.sort
-  #     songs_by_artist_array.each_with_index {|song, index| puts "#{index + 1}. " + song}
-  #   else
-  #     false
-  #   end
-  # end
-
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     name = gets.strip
