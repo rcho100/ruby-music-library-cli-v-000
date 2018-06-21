@@ -17,13 +17,11 @@ class Song
     end
   end
 
-#artist
   def artist=(artist)
     @artist = artist
     artist.add_song(self)
   end
 
-  #genre
   def genre=(genre)
     @genre = genre
     if genre.songs.detect {|song| song == self}
