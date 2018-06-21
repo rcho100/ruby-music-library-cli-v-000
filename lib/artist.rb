@@ -32,10 +32,6 @@ class Artist
     @@all.clear
   end
 
-  # def songs
-  #   @songs
-  # end
-
   def add_song(song)
     if song.artist == self
       song
